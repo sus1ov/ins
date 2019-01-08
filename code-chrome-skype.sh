@@ -11,7 +11,8 @@ sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
 apt-get update && apt-get install -y google-chrome-stable 
 
 # install key and skype
-wgeet -qO- https://repo.skype.com/data/SKYPE-GPG-KEY | sudo apt-key add -
-sh -c 'echo "deb [arch=amd64] https://repo.skype.com/deb stable main" > /etc/apt/sources.list.d/skypeforlinux.list'
+wget -qO- https://repo.skype.com/data/SKYPE-GPG-KEY | sudo apt-key add -
+sh -c 'echo "deb [arch=amd64] https://repo.skype.com/deb stable main" > /etc/apt/sources.list.d/skype-stable.list'
 sudo apt-get update
-sudo apt-get install skypeforlinux -y 
+sudo apt-get install skype-stable -y 
+
