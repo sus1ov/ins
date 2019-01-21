@@ -12,7 +12,7 @@ sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
 wget -qO- https://repo.skype.com/data/SKYPE-GPG-KEY | sudo apt-key add -
 sh -c 'echo "deb [arch=amd64] https://repo.skype.com/deb stable main" > /etc/apt/sources.list.d/skype-stable.list'
 
-apt-get install -y apt-transport-https
+apt-get install -y apt-transport-https vlc 
 apt-get update
 apt-get install -y code \
                    p7zip-full \
