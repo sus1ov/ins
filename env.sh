@@ -16,6 +16,6 @@ apt-get install -y apt-transport-https vlc
 apt-get update
 apt-get install -y code \
                    p7zip-full \
-                   skype-stable \
+                   skypeforlinux \
                    sublime-text \
                    google-chrome-stable 
