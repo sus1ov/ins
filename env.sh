@@ -21,3 +21,6 @@ apt-get install -y code \
                    skypeforlinux \
                    sublime-text \
                    google-chrome-stable 
+
+sed -i 's/\#MultiProfile = off/MultiProfile = multiple/' /etc/bluetooth/main.conf
+systemctl restart bluetooth
