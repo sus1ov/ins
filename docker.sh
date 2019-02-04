@@ -13,4 +13,4 @@ add-apt-repository \
    stable"
 apt-get update
 apt-get install docker-ce -y
-
+usermod -a -G docker $USER
