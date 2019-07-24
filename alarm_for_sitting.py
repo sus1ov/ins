@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from tkinter import Tk, Button
 period=600000
 def clicked():
